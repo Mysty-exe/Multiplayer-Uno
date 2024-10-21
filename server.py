@@ -202,7 +202,6 @@ while True:
         continue
     p = 1 #Player one
 
-    print(f'Connected by {addr[0]}. Player {num_of_players}')
     if num_of_players == 2: #Runs if player 2 joined and the game is ready to start
         game.ready = True #Both player 1 and 2 are ready
         game.hand2.reformat_hand() #Reformats the hand of player 2

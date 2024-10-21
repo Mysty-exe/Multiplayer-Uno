@@ -26,7 +26,7 @@ class Network:
         try:
             self.client.connect(self.addr) #Attempts to connect to server
             full = self.client.recv(4096).decode()
-            print(full)
+            
             if full == 'Full':
                 self.connected = False
             else:
